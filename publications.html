@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications | Kissinger Research Group</title>
+  <meta name="description" content="Publications from the Kissinger Lab" />
+  <meta property="og:title" content="Publications | Kissinger Research Group" />
+  <meta property="og:description" content="Peer-reviewed publications in parasite genomics, databases, and bioinformatics" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="./publications.html" />
+  <link rel="alternate" type="application/rss+xml" title="Lab News RSS" href="/rss.xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="publications">
+  <a href="#main" class="skip visually-hidden">Skip to main content</a>
+  <header class="header">
+    <div class="container nav" role="navigation" aria-label="Main">
+      <a href="index.html" class="font-semibold">Kissinger Lab</a>
+      <nav id="site-nav" class="spacer"></nav>
+      <button id="theme-toggle" class="btn" aria-pressed="false" aria-label="Toggle light/dark">Theme</button>
+    </div>
+  </header>
+
+  <main id="main" class="container" tabindex="-1">
+    <section class="hero" aria-label="Publications Hero">
+      <div class="parallax" aria-hidden="true"></div>
+      <div class="container">
+        <h1>Publications</h1>
+        <p>Search, filter, and explore our publications. Instant results, deep links, and accessible displays.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="filters-heading">
+      <h2 id="filters-heading">Search & Filters</h2>
+      <div class="toolbar" role="group" aria-label="Filters">
+        <input id="q" type="search" placeholder="Search title, journal, topic..." aria-label="Search" />
+        <input id="author" type="search" placeholder="Filter by author" aria-label="Filter by author" />
+        <select id="year" aria-label="Filter by year"></select>
+      </div>
+    </section>
+
+    <section aria-labelledby="per-year-heading">
+      <h2 id="per-year-heading">Publications per Year</h2>
+      <svg id="pubs-svg" role="img" aria-label="Publications per year" style="width:100%; height:180px"></svg>
+    </section>
+
+    <section aria-labelledby="list-heading">
+      <h2 id="list-heading">Results</h2>
+      <div id="pub-list" class="grid" role="list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container small">
+      <p class="tooltip" data-pun="Let’s get in-SYNCytium.">Hover for a tasteful science pun.</p>
+      <p>&copy; <span id="year"></span> Kissinger Research Group</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

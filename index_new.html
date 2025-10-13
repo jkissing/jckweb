@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kissinger Research Group</title>
+  <meta name="description" content="Parasite genomics · data integration · bioinformatics" />
+  <meta property="og:title" content="Kissinger Research Group" />
+  <meta property="og:description" content="Parasite genomics · data integration · bioinformatics" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="./index.html" />
+  <link rel="alternate" type="application/rss+xml" title="Lab News RSS" href="rss.xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* Fullscreen canvas homepage */
+    html, body { height: 100%; }
+    body.home { margin:0; padding:0; overflow:hidden; }
+    #stage { position:relative; width:100%; height:100%; }
+    #c { position:absolute; inset:0; display:block; width:100%; height:100%; }
+    .overlay {
+      position:absolute; left:0; right:0; top:38%; display:flex; justify-content:center; pointer-events:none; padding:24px;
+      transform: translateY(-38%);
+      z-index:2;
+    }
+    .overlay h1 { color:#ff2d2d; margin:0; font-size:clamp(1.5rem, 3vw, 2.25rem); letter-spacing:.5px; text-shadow:0 2px 18px rgba(0,0,0,.5); }
+    .attribution { display:none !important; }
+    /* Minimal nav on top of canvas */
+    .home-nav { position:absolute; top:0; left:0; right:0; z-index:3; }
+    .home-nav .nav { padding:.5rem 0; }
+    .news-strip { position:absolute; bottom:0; left:0; right:0; z-index:3; }
+    .news-strip .container { background:rgba(0,0,0,.35); backdrop-filter:saturate(180%) blur(6px); -webkit-backdrop-filter:saturate(180%) blur(6px); border-top:1px solid rgba(255,255,255,.08); border-bottom:1px solid rgba(255,255,255,.08); padding:.5rem 1rem; border-radius:12px 12px 0 0; }
+    .news-list-inline { display:flex; gap:.75rem; overflow:auto; scrollbar-width:thin; }
+    .news-list-inline > article { white-space:nowrap; color:#e7ecf5; }
+    /* Hide any possible Verly UI/dropdowns */
+    #stage select, #stage .controls, #stage .verly-ui, #stage .verly-dropdown { display:none !important; }
+    /* Transparent footer overlay */
+    .home-footer { position:absolute; left:0; right:0; bottom:0; z-index:3; }
+    .home-footer .container { background:rgba(0,0,0,0.25); -webkit-backdrop-filter:saturate(180%) blur(4px); backdrop-filter:saturate(180%) blur(4px); border-top:1px solid rgba(255,255,255,0.08); padding:.5rem 1rem; color:#fff; }
+    /* Waves loader (non-blocking, transparent bg) */
+    .wrapper{ display:flex; position:relative; width:100%; justify-content:center; align-items:center; pointer-events:none; background:transparent; }
+    .loader{ display:flex; position:relative; width:250px; height:88px; }
+    .wave{ display:flex; justify-content:space-between; position:absolute; left:0; top:0; height:100%; width:100%; perspective:100px; }
+    .wave>div{ position:relative; width:16px; height:16px; border-radius:100%; }
+    .wave>div::before{ content:''; position:absolute; top:0; left:0; width:100%; height:100%; background-color:#aaaaaa; border-radius:50%; }
+    .top-wave>div::before{ background-color:#ca0018; }
+    .top-wave>div{ animation: move 3s ease-in-out infinite reverse; }
+    .top-wave>div::before{ animation: grow 3s linear infinite reverse; }
+    .bottom-wave>div{ animation: move 3s ease-in-out infinite; }
+    .bottom-wave>div::before{ animation: grow 3s linear infinite; }
+    .wave>div:nth-child(10){animation-delay:0s}.wave>div:nth-child(9){animation-delay:-.1s}.wave>div:nth-child(8){animation-delay:-.2s}.wave>div:nth-child(7){animation-delay:-.3s}.wave>div:nth-child(6){animation-delay:-.4s}.wave>div:nth-child(5){animation-delay:-.5s}.wave>div:nth-child(4){animation-delay:-.6s}.wave>div:nth-child(3){animation-delay:-.7s}.wave>div:nth-child(2){animation-delay:-.8s}.wave>div:nth-child(1){animation-delay:-.9s}
+    .bottom-wave>div:nth-child(10){animation-delay:.75s}.bottom-wave>div:nth-child(9){animation-delay:.65s}.bottom-wave>div:nth-child(8){animation-delay:.55s}.bottom-wave>div:nth-child(7){animation-delay:.45s}.bottom-wave>div:nth-child(6){animation-delay:.35s}.bottom-wave>div:nth-child(5){animation-delay:.25s}.bottom-wave>div:nth-child(4){animation-delay:.15s}.bottom-wave>div:nth-child(3){animation-delay:.05s}.bottom-wave>div:nth-child(2){animation-delay:-.05s}.bottom-wave>div:nth-child(1){animation-delay:-.15s}
+    @keyframes move{0%{transform:translateY(0)}25%{transform:translateY(88px)}50%{transform:translateY(0)}75%{transform:translateY(88px)}100%{transform:translateY(0)}}
+    @keyframes grow{0%,50%,75%,100%{transform:scale(.7)}10%,60%{transform:scale(1)}35%,85%{transform:scale(.4)}}
+    /* Home UGA image placement */
+    .home-uga{position:absolute; left:16px; top:72px; width:84px; height:auto; opacity:.95; z-index:3; filter:drop-shadow(0 2px 8px rgba(0,0,0,.6))}
+  </style>
+</head>
+<body class="home" data-page="home">
+  <a href="#main" class="skip visually-hidden">Skip to main content</a>
+  <header class="home-nav header">
+    <div class="container nav" role="navigation" aria-label="Main">
+      <a href="index.html" class="font-semibold">Kissinger Lab</a>
+      <nav id="site-nav" class="spacer"></nav>
+    </div>
+  </header>
+
+  <main id="main" class="container visually-hidden" tabindex="-1">Homepage</main>
+
+  <div id="stage">
+    <canvas id="c"></canvas>
+    <img class="home-logo" src="LOGO.png" alt="Kissinger Lab logo" onerror="this.remove()">
+    <img class="home-uga" src="UGA.jpg" alt="UGA logo" onerror="this.remove()">
+    <div class="overlay">
+      <div>
+        <h1 style="margin-bottom:.25rem">Welcome to Kissinger Lab</h1>
+        <h2 style="margin:.25rem 0 0; font-weight:600; font-size:clamp(1.1rem,2.5vw,1.5rem); color:#fecaca; letter-spacing:.3px">Parasite Genomics • Systems • Data Integration</h2>
+        <div class="wrapper" aria-hidden="true" style="position:relative; margin:.75rem 0 0; height:96px;">
+          <div class="loader">
+            <div class="wave top-wave">
+              <div></div><div></div><div></div><div></div><div></div>
+              <div></div><div></div><div></div><div></div><div></div>
+            </div>
+            <div class="wave bottom-wave">
+              <div></div><div></div><div></div><div></div><div></div>
+              <div></div><div></div><div></div><div></div><div></div>
+            </div>
+          </div>
+        </div>
+        <p style="max-width: 70ch; margin-top:.5rem; color:#ffffff; text-shadow:0 1px 10px rgba(0,0,0,.6)">
+          Our lab focuses on parasite genomics and the biology of genome evolution (nuclear and organellar). The genome sequences of parasitic eukaryotes are often highly-reduced, devoid of recognizable mobile elements and riddled with intracellular and lateral gene transfers. We apply molecular, computational and phylogenetic tools to the analysis of parasite DNA, spanning comparative genomics, systems biology of host–pathogen interactions, and the development of tools for data integration and mining, with a focus on <em>Toxoplasma gondii</em> and <em>Cryptosporidium</em>.
+        </p>
+      </div>
+    </div>
+    <section class="news-strip" aria-label="Latest news">
+      <div class="container">
+        <div id="news-list" class="news-list-inline" role="list"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/gh/anuraghazra/Verly.js/dist/verly.bundle.min.js"></script>
+  <script>
+    // Helpers used by the demo
+    function random(min, max){ return Math.random() * (max - min) + min; }
+
+    let width, height, mouseX = 0, mouseY = 0;
+    const FLEE_RADIUS = 100;
+
+    window.onload = function(){
+      const canvas = document.getElementById('c');
+      const ctx = canvas.getContext('2d');
+      const dpr = window.devicePixelRatio || 1;
+      const resize = () => {
+        width = canvas.width = Math.floor(window.innerWidth * dpr);
+        height = canvas.height = Math.floor(window.innerHeight * dpr);
+        canvas.style.width = window.innerWidth + 'px';
+        canvas.style.height = window.innerHeight + 'px';
+        ctx.setTransform(dpr,0,0,dpr,0,0);
+      };
+      resize();
+      window.addEventListener('resize', resize);
+
+      const verly = new Verly(16, canvas, ctx);
+
+      const boids = [];
+      for(let i=0;i<60;i++){
+        boids.push(new Boid(Math.random()*window.innerWidth, Math.random()*window.innerHeight, 5, verly));
+      }
+
+      // mouse
+      window.addEventListener('mousemove', (e)=>{
+        const rect = canvas.getBoundingClientRect();
+        mouseX = e.clientX - rect.left;
+        mouseY = e.clientY - rect.top;
+      });
+
+      function animate(){
+        const grd = ctx.createRadialGradient(width/2, height/2, 0, width/2, height/2, width);
+        grd.addColorStop(0, 'rgba(25,25,25,1)');
+        grd.addColorStop(1, 'rgba(0,0,25,1)');
+        ctx.fillStyle = grd; ctx.fillRect(0,0,window.innerWidth, window.innerHeight);
+
+        for(const b of boids){ b.update(); b.applyFlock(boids); b.boundaries(); b.render(ctx); }
+
+        verly.update(); verly.render(); verly.interact();
+
+        // mouse ring
+        ctx.beginPath(); ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+        ctx.arc(mouseX, mouseY, FLEE_RADIUS, 0, Math.PI*2); ctx.stroke(); ctx.closePath();
+
+        requestAnimationFrame(animate);
+      }
+      animate();
+    };
+
+    // --- Boids & Tail using Verly primitives ---
+    class Boid{
+      constructor(x,y,radius, verly){
+        this.pos = new Vector(x,y);
+        this.acc = new Vector(0,0);
+        this.vel = Vector.random2D(0,0); this.vel.mult(10);
+        this.radius = radius||5; this.maxSpeed = 3; this.maxForce = 0.05; this.mass = 0.2;
+        this.flock = new Flock(this);
+        this.flockMultiplier = { separate:2.0, align:1.2, cohesion:1.3, wander:0.5 };
+        this.tail = new Tail(this.pos.x, this.pos.y, Math.floor(random(5,10)), Math.floor(random(5,10)), 0, verly);
+        this.tail.setGravity(new Vector(0,0));
+      }
+      update(){ this.vel.add(this.acc); this.vel.limit(this.maxSpeed); this.pos.add(this.vel); this.acc.mult(0); this.tail.update(); this.tail.render(); this.tail.points[0].pos.setXY(this.pos.x, this.pos.y); }
+      applyForce(f){ this.acc.add(f); }
+      boundaries(){
+        const d=100; let desire=null;
+        if(this.pos.x<d) desire=new Vector(this.maxSpeed,this.vel.y); else if(this.pos.x>window.innerWidth-d) desire=new Vector(-this.maxSpeed,this.vel.y);
+        if(this.pos.y<d) desire=new Vector(this.vel.x,this.maxSpeed); else if(this.pos.y>window.innerHeight-d) desire=new Vector(this.vel.x,-this.maxSpeed);
+        if(desire){ desire.normalize(); desire.mult(this.maxSpeed); const steer=Vector.sub(desire,this.vel); steer.limit(0.1); this.applyForce(steer); }
+      }
+      applyFlock(agents){
+        const sep=this.flock.separate(agents), ali=this.flock.align(agents), coh=this.flock.cohesion(agents), wander=this.flock.wander(), flee=this.flock.flee(new Vector(mouseX,mouseY));
+        sep.mult(this.flockMultiplier.separate); ali.mult(this.flockMultiplier.align); coh.mult(this.flockMultiplier.cohesion); wander.mult(this.flockMultiplier.wander); flee.mult(50);
+        this.applyForce(sep); this.applyForce(ali); this.applyForce(coh); this.applyForce(wander); this.applyForce(flee);
+      }
+      render(ctx){
+        ctx.beginPath(); const angle=this.vel.heading(); ctx.save(); ctx.fillStyle='#ef4444'; ctx.translate(this.pos.x,this.pos.y); ctx.rotate(angle); ctx.arc(0,0,4,0,Math.PI*2); ctx.fill(); ctx.restore(); ctx.closePath();
+      }
+    }
+
+    class Flock{
+      constructor(current){ this.currentAgent=current; this.wandertheta=0; }
+      seek(target){ const desired=Vector.sub(target,this.currentAgent.pos).normalize().mult(this.currentAgent.maxSpeed); const steer=Vector.sub(desired,this.currentAgent.vel).limit(this.currentAgent.maxForce); return steer; }
+      flee(target){ let desired=null; const d=Vector.dist(this.currentAgent.pos,target); if(d<FLEE_RADIUS){ desired=Vector.sub(target,this.currentAgent.pos).normalize().mult(this.currentAgent.maxSpeed); const steer=Vector.sub(desired,this.currentAgent.vel).limit(this.currentAgent.maxForce); return steer.mult(-1);} return new Vector(0,0); }
+      _returnSteer(sum){ sum.normalize().mult(this.currentAgent.maxSpeed); const steer=Vector.sub(sum,this.currentAgent.vel); steer.limit(this.currentAgent.maxForce); return steer; }
+      wander(){ const wanderR=100, wanderD=80, change=0.1; this.wandertheta += -change + Math.random()*change; const circleloc=this.currentAgent.vel.copy().normalize().mult(wanderD).add(this.currentAgent.pos); const h=this.currentAgent.vel.heading(); const circleOffSet=new Vector(wanderR*Math.cos(this.wandertheta+h), wanderR*Math.sin(this.wandertheta+h)); const target=Vector.add(circleloc,circleOffSet); const desired=Vector.sub(target,this.currentAgent.pos).normalize().mult(this.currentAgent.maxSpeed); const steer=Vector.sub(desired,this.currentAgent.vel).limit(this.currentAgent.maxForce); return steer; }
+      separate(agents){ const desiredseperation=this.currentAgent.radius*4; let sum=new Vector(); let count=0; for(let i=0;i<agents.length;i++){ const d=Vector.distSq(this.currentAgent.pos, agents[i].pos); if(d>0 && d<desiredseperation*desiredseperation){ const diff=Vector.sub(this.currentAgent.pos, agents[i].pos).normalize(); diff.div(d); sum.add(diff); count++; } } if(count>0){ sum.div(count); return this._returnSteer(sum); } return new Vector(0,0); }
+      align(agents){ const neighbordist=50; let sum=new Vector(0,0); let count=0; for(let i=0;i<agents.length;i++){ const d=Vector.distSq(this.currentAgent.pos, agents[i].pos); if(d>0 && d<neighbordist*neighbordist){ sum.add(agents[i].vel); count++; } } if(count>0){ sum.div(count); return this._returnSteer(sum); } return new Vector(0,0); }
+      cohesion(agents){ const neighbordist=30; let sum=new Vector(0,0); let count=0; for(let i=0;i<agents.length;i++){ const d=Vector.distSq(this.currentAgent.pos, agents[i].pos); if(d>0 && d<neighbordist*neighbordist){ sum.add(agents[i].pos); count++; } } if(count>0){ sum.div(count); sum.sub(this.currentAgent.pos); return this._returnSteer(sum);} return new Vector(0,0); }
+    }
+
+    class Tail extends Entity{
+      constructor(x,y,segments,gap,pinoffset,verlyInstance){ super(16, verlyInstance); this.points=[]; this.sticks=[]; this.x=x; this.y=y; this.segments=segments; this.gap=gap; this.pinoffset=pinoffset; this.createRope(); }
+      createRope(){ for(let i=0;i<this.segments;i++){ this.addPoint(this.x + i*this.gap, this.y, 0, 0).setFriction(0.75); } for(let i=0;i<this.segments-1;i++){ this.addStick(i, (i+1)%this.segments).setColor('#35ebbe'); } if(this.pin!==undefined) this.pin(this.pinoffset); return this; }
+      renderPoints(){}
+    }
+  </script>
+  <script src="assets/js/main.js"></script>
+
+  <footer class="home-footer">
+    <div class="container small">
+      <div>&copy; <span id="year"></span> Kissinger Research Group • University of Georgia</div>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
