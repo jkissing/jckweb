@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Databases - Kissinger Research Group">
+    <title>Databases | Kissinger Research Group</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <h1>Kissinger Research Group</h1>
+                    </a>
+                    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="databases.html" class="active">Databases</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header page-header--members">
+        <div class="container">
+            <h1 class="page-title">Databases</h1>
+            <p class="page-subtitle">Genomic and functional resources for the research community</p>
+            <div class="header-orbs" aria-hidden="true">
+                <span class="orb orb--one"></span>
+                <span class="orb orb--two"></span>
+                <span class="orb orb--three"></span>
+            </div>
+        </div>
+        <div class="parasite-morphs" aria-hidden="true">
+            <span class="morph morph--toxoplasma morph--one"></span>
+            <span class="morph morph--crypto morph--two"></span>
+            <span class="morph morph--toxoplasma morph--three"></span>
+            <span class="morph morph--crypto morph--four"></span>
+        </div>
+    </section>
+
+    <!-- Database Content -->
+    <section class="section">
+        <div class="container">
+            <div class="database-hero">
+                <div class="database-hero-content">
+                    <h2>VEuPathDB</h2>
+                    <p class="lead">Eukaryotic Pathogen, Vector and Host Informatics Resource — an integrated platform for genomics, functional data, and community tools.</p>
+                    <p>Our lab builds and curates data pipelines and visualization tools that power the VEuPathDB ecosystem, helping researchers explore parasite genomes, host interactions, and vector biology.</p>
+                    <div class="database-hero-actions">
+                        <a href="https://veupathdb.org" target="_blank" class="btn btn-primary">Visit VEuPathDB</a>
+                        <a href="#component-databases" class="btn btn-outline">Browse Component DBs</a>
+                    </div>
+                </div>
+                <div class="database-hero-visual">
+                    <img src="images/VEuPathDB-logo-full.png" alt="VEuPathDB Logo" loading="lazy">
+                </div>
+            </div>
+
+            <div class="database-stats">
+                <div class="stat-card">
+                    <h3>Genomes + Annotations</h3>
+                    <p>Unified access to curated eukaryotic pathogen and vector genomes.</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Functional Data</h3>
+                    <p>RNA-Seq, proteomics, phenotypes, orthology, and pathways.</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Community Tools</h3>
+                    <p>Search, visualization, and data mining workflows for discovery.</p>
+                </div>
+            </div>
+
+            <div class="database-features-panel">
+                <h3>What You Can Do</h3>
+                <ul class="feature-list">
+                    <li>Search genes, pathways, and phenotypes across organisms.</li>
+                    <li>Compare genomes with synteny and orthology tools.</li>
+                    <li>Explore functional datasets with integrated visualization.</li>
+                    <li>Export data for downstream analysis and publications.</li>
+                </ul>
+            </div>
+
+            <h3 id="component-databases">Component Databases</h3>
+            <div class="component-databases component-databases--logos">
+                <a class="db-card db-card--logo" href="https://toxodb.org" target="_blank">
+                    <img src="images/ToxoDB logo_0.png" alt="ToxoDB Logo" loading="lazy">
+                    <div class="db-details">
+                        <h4>ToxoDB</h4>
+                        <p>The <em>Toxoplasma</em> Genomics Resource for <em>Toxoplasma gondii</em> and coccidian parasites.</p>
+                    </div>
+                </a>
+
+                <a class="db-card db-card--logo" href="https://cryptodb.org" target="_blank">
+                    <img src="images/CryptoDB logo.png" alt="CryptoDB Logo" loading="lazy">
+                    <div class="db-details">
+                        <h4>CryptoDB</h4>
+                        <p>Genomic resources for <em>Cryptosporidium</em> species and comparative datasets.</p>
+                    </div>
+                </a>
+
+                <a class="db-card db-card--logo" href="https://plasmodb.org" target="_blank">
+                    <img src="images/PlasmoDB logo_0.png" alt="PlasmoDB Logo" loading="lazy">
+                    <div class="db-details">
+                        <h4>PlasmoDB</h4>
+                        <p>The Plasmodium Genomics Resource for malaria parasites and related organisms.</p>
+                    </div>
+                </a>
+
+                <a class="db-card db-card--logo" href="https://tritrypdb.org" target="_blank">
+                    <img src="images/TriTrypDB logo_0.png" alt="TriTrypDB Logo" loading="lazy">
+                    <div class="db-details">
+                        <h4>TriTrypDB</h4>
+                        <p>Trypanosomatid parasite genomes including <em>Trypanosoma</em> and <em>Leishmania</em>.</p>
+                    </div>
+                </a>
+
+                <a class="db-card db-card--logo" href="https://amoebadb.org" target="_blank">
+                    <img src="images/AmoebaDB logo_0.png" alt="AmoebaDB Logo" loading="lazy">
+                    <div class="db-details">
+                        <h4>AmoebaDB</h4>
+                        <p>Resources for <em>Entamoeba</em> and other amoebozoan parasites.</p>
+                    </div>
+                </a>
+
+                <a class="db-card db-card--logo" href="https://giardiadb.org" target="_blank">
+                    <img src="images/GiardiaDB_0.png" alt="GiardiaDB Logo" loading="lazy">
+                    <div class="db-details">
+                        <h4>GiardiaDB</h4>
+                        <p>Comprehensive genomic data for <em>Giardia lamblia</em>.</p>
+                    </div>
+                </a>
+
+                <a class="db-card db-card--logo" href="https://microsporidiadb.org" target="_blank">
+                    <img src="images/MicroDB logo_0.png" alt="MicrosporidiaDB Logo" loading="lazy">
+                    <div class="db-details">
+                        <h4>MicrosporidiaDB</h4>
+                        <p>Genomic resources for microsporidian parasites.</p>
+                    </div>
+                </a>
+
+                <a class="db-card db-card--logo" href="https://piroplasmadb.org" target="_blank">
+                    <img src="images/PiroplasmaDB_0.png" alt="PiroplasmaDB Logo" loading="lazy">
+                    <div class="db-details">
+                        <h4>PiroplasmaDB</h4>
+                        <p>Data for piroplasm parasites including <em>Babesia</em> and <em>Theileria</em>.</p>
+                    </div>
+                </a>
+
+                <a class="db-card db-card--logo" href="https://trichdb.org" target="_blank">
+                    <img src="images/TrichDB logo_0.png" alt="TrichDB Logo" loading="lazy">
+                    <div class="db-details">
+                        <h4>TrichDB</h4>
+                        <p>Genomic resources for <em>Trichomonas vaginalis</em>.</p>
+                    </div>
+                </a>
+
+                <a class="db-card db-card--logo" href="https://vectorbase.org" target="_blank">
+                    <div class="db-logo db-logo--fallback">VB</div>
+                    <div class="db-details">
+                        <h4>VectorBase</h4>
+                        <p>Genomic data for invertebrate vectors of human pathogens.</p>
+                    </div>
+                </a>
+
+                <a class="db-card db-card--logo" href="https://hostdb.org" target="_blank">
+                    <div class="db-logo db-logo--fallback">H</div>
+                    <div class="db-details">
+                        <h4>HostDB</h4>
+                        <p>Host genome information to support host-pathogen interaction studies.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="database-two-column">
+                <div class="contributions">
+                    <h3>Our Contributions</h3>
+                    <ul>
+                        <li>Data integration and quality control</li>
+                        <li>Development of bioinformatics tools and analysis pipelines</li>
+                        <li>Curation of genomic annotations</li>
+                        <li>User support, training, and documentation</li>
+                        <li>Regular releases with new genomic and functional datasets</li>
+                    </ul>
+                </div>
+                <div class="researcher-info">
+                    <h3>For Researchers</h3>
+                    <p>Whether you're studying parasite biology, searching for drug targets, or conducting comparative genomics, VEuPathDB provides the tools and data you need.</p>
+                    <p>Explore tutorials, webinars, and documentation on the VEuPathDB website.</p>
+                    <a href="https://veupathdb.org" target="_blank" class="btn btn-primary">VEuPathDB Resources</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Kissinger Research Group. All rights reserved.</p>
+                <p>University of Georgia - Center for Tropical and Emerging Global Diseases</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
