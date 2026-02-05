@@ -1,0 +1,170 @@
+{
+  "currentMembers": [
+    {
+      "id": 1,
+      "name": "Jessica \"Jessie\" Kissinger",
+      "title": "Co-Investigator & Lab Head",
+      "role": "University Professor",
+      "positions": [
+        "University Professor, Department of Genetics",
+        "Member, Center for Tropical & Emerging Global Diseases",
+        "Member, Institute of Bioinformatics",
+        "Associate CIO for Research, UGA"
+      ],
+      "email": "jkissing@uga.edu",
+      "image": "images/Kissinger_0.jpg",
+      "bio": "Dr. Jessica \"Jessie\" Kissinger is a professor of Genetics and former director of the Institute of Bioinformatics (2010-2019). Her research focuses on the evolution of protist parasite genomes (nuclear, plastid and mitochondrial), in particular, the genomes of organisms that cause malaria, toxoplasmosis and cryptosporidiosis.",
+      "fullBio": "Dr. Jessica \"Jessie\" Kissinger is a professor of Genetics and former director of the Institute of Bioinformatics (2010-2019). Her research focuses on the evolution of protist parasite genomes (nuclear, plastid and mitochondrial), in particular, the genomes of organisms that cause malaria, toxoplasmosis and cryptosporidiosis. Her research area has necessitated the development of new computational tools to address issues of gene transfer and syntenic regions of genome sequences as well tools related to data integration, data sharing and data mining. She also maintains a traditional \"wet laboratory\" for validation of experimental findings. One of the resources that she helped to develop, and for which she is now a Co-I, is VEuPathDB. This database, which has evolved into a large international project, serves the eukaryotic pathogen and vector research community. Her research has led her to be involved in numerous international collaborations. She lived in Brazil for two years while studying malaria and she returned for 20 years as joint-PI of a Fogarty Bioinformatics training grants and as a researcher in the Ciências sem Fronteiras program. She also spent time in Uganda as a Fulbright Scholar working at the African Center of Excellence in Bioinformatics and Data Science. Internationally, she is a member of numerous advisory boards and committees and advises on issues related to bioinformatics training and research.",
+      "interests": ["Parasite Genomics", "Bioinformatics", "Database Development", "Comparative Genomics", "VEuPathDB"],
+      "category": "pi"
+    },
+    {
+      "id": 2,
+      "name": "Samantha Gunasekera",
+      "title": "Post-doctoral Research Associate",
+      "role": "Postdoc",
+      "email": "samantha.gunasekera@uga.edu",
+      "image": "images/placeholder-member.jpg",
+      "bio": "Samantha is a postdoctoral trainee within the research group studying gene regulation in Cryptosporidium.",
+      "fullBio": "Samantha is a postdoctoral trainee within the research group. She is currently studying gene regulation in Cryptosporidium. She has spent most of her life in Perth, Western Australia and moved to Athens, Georgia to work on this project. Her PhD research was focused on developing a microfluidic in vitro model for Cryptosporidium parvum and Cryptosporidium hominis, and she previously worked as an electron microscopist specializing in the imaging and analysis of biological samples.",
+      "interests": ["Gene Regulation", "Cryptosporidium", "Microfluidics", "Electron Microscopy"],
+      "category": "postdoc"
+    },
+    {
+      "id": 3,
+      "name": "Fiifi Agyabeng-Dadzie",
+      "title": "PhD Student",
+      "role": "Graduate Student",
+      "email": "fiifi.dadzie@uga.edu",
+      "image": "images/Fiifi.jpg",
+      "bio": "Fiifi is a researcher investigating the genomic global diversity of Cryptosporidium, proficient in both wet lab and dry lab techniques.",
+      "fullBio": "Fiifi is a researcher in the Kissinger Lab investigating the genomic global diversity of Cryptosporidium, a parasitic pathogen of significant public health importance. Proficient in both wet lab and dry lab techniques, he integrates experimental work with computational analysis to understand genetic variation and population structure across different geographic regions and host species. Fiifi was awarded an NIH T32 Training Grant (2022-2025) supporting his genomics research. When he's not in the lab, you can find him watching anime and playing video games with family and friends.",
+      "interests": ["Cryptosporidium Genomics", "Population Structure", "Genetic Variation", "Wet & Dry Lab"],
+      "award": "NIH T32 Training Grant (2022-2025)",
+      "category": "graduate"
+    },
+    {
+      "id": 4,
+      "name": "Rafeed Rahman Turjya",
+      "title": "PhD Student",
+      "role": "Bioinformatics PhD Student",
+      "email": "rafeed.turjya@uga.edu",
+      "image": "images/placeholder-member.jpg",
+      "bio": "Rafeed is a Bioinformatics PhD student researching mitochondrial genome topology in apicomplexan parasites.",
+      "fullBio": "Rafeed Rahman Turjya is a Bioinformatics PhD student in the Kissinger Lab. His research revolves around characterizing mitochondrial genome topology in apicomplexan parasites by figuring out puzzles hidden within sequences. Previously, he completed both BS and MS in Genetic Engineering and Biotechnology from University of Dhaka, Bangladesh.",
+      "interests": ["Mitochondrial Genomics", "Apicomplexa", "Sequence Analysis", "Bioinformatics"],
+      "education": "BS & MS, Genetic Engineering and Biotechnology, University of Dhaka, Bangladesh",
+      "category": "graduate"
+    },
+    {
+      "id": 5,
+      "name": "Ankush Sharma",
+      "title": "PhD Student",
+      "role": "Graduate Student",
+      "email": "ankush.sharma@uga.edu",
+      "image": "images/placeholder-member.jpg",
+      "bio": "Ankush is a PhD student investigating genome evolution and regulation in apicomplexan parasites.",
+      "fullBio": "Ankush Sharma is a PhD student in the Kissinger Lab investigating genome evolution and regulation in apicomplexan parasites. His research focuses on understanding the molecular mechanisms that drive genome evolution and gene regulation in these important human pathogens.",
+      "interests": ["Genome Evolution", "Gene Regulation", "Apicomplexa", "Computational Biology"],
+      "category": "graduate"
+    },
+    {
+      "id": 6,
+      "name": "Constance Wang",
+      "title": "Undergraduate Researcher",
+      "role": "Undergraduate Student",
+      "email": "constance.wang@uga.edu",
+      "image": "images/placeholder-member.jpg",
+      "bio": "Constance is an undergraduate researcher contributing to genomics and bioinformatics projects in the laboratory.",
+      "fullBio": "Constance Wang is an undergraduate researcher in the Kissinger Lab. She contributes to various genomics and bioinformatics projects, gaining hands-on experience in both computational and laboratory research techniques.",
+      "interests": ["Genomics", "Bioinformatics", "Laboratory Research"],
+      "category": "undergraduate"
+    }
+  ],
+  "veupathdbStaff": [
+    {
+      "id": 101,
+      "name": "Cristina Aurrecoechea",
+      "title": "VEuPathDB UI Team Co-Manager",
+      "role": "Senior Scientist",
+      "email": "cristina.aurrecoechea@uga.edu",
+      "image": "images/Cristina_Aurrecoechea_0.jpg",
+      "bio": "Cristina co-manages the UI-Infra team, participating in design discussions, quality control, and cross-team coordination.",
+      "fullBio": "Cristina co-manages the UI-Infra team with Steve Fischer (University of Pennsylvania). Her role is making sure we are on track, participating in design discussions, doing quality control, implementing specific requests, and helping with cross-team coordination. We have fun working together and are never short on challenges!",
+      "interests": ["Database Development", "User Interface", "Quality Control", "Team Coordination"],
+      "category": "veupathdb"
+    },
+    {
+      "id": 102,
+      "name": "Nupur Kittur",
+      "title": "VEuPathDB Outreach Team",
+      "role": "Scientist",
+      "email": "nupur.kittur@uga.edu",
+      "image": "images/Nupur.jpg",
+      "bio": "Nupur serves on the VEuPathDB outreach team, engaging with scientists globally to support database use.",
+      "fullBio": "Nupur serves on the VEuPathDB outreach team, engaging with scientists across the globe to support their use of database data, tools, and features. Her work includes user support, social media communication, and the development of tutorials, webinars, and workshops that promote bioinformatics learning. She also co-leads the ClinEpiDB project, contributing to the integration and dissemination of clinical and epidemiological data.",
+      "interests": ["Outreach", "User Support", "Bioinformatics Training", "ClinEpiDB"],
+      "category": "veupathdb"
+    },
+    {
+      "id": 103,
+      "name": "Mustafa Veysi Nural",
+      "title": "Senior Database & Systems Administrator",
+      "role": "VEuPathDB & NIH CIDER Projects",
+      "email": "mustafa.nural@uga.edu",
+      "image": "images/Mustafa_Profile_0.jpg",
+      "bio": "Mustafa provides data management and infrastructure support for VEuPathDB and NIH CIDER projects.",
+      "fullBio": "Mustafa provides data management and infrastructure support for the VEuPathDB and NIH CIDER projects. His daily routine involves a wide range activities from database administration & development, systems administration, programming, and working with scientists to develop and implement creative solutions to address challenging technical problems.",
+      "interests": ["Database Administration", "Systems Administration", "Infrastructure", "Programming"],
+      "category": "veupathdb"
+    },
+    {
+      "id": 104,
+      "name": "Drew Spruill",
+      "title": "Systems Architecture and DevOps Manager",
+      "role": "VEuPathDB Systems Team Lead",
+      "email": "drew.spruill@uga.edu",
+      "image": "images/Drew_Spruill.png",
+      "bio": "Drew leads the systems team for VEuPathDB, managing infrastructure and DevOps operations.",
+      "fullBio": "Drew leads the systems team for VEuPathDB, managing the infrastructure, deployment pipelines, and DevOps operations that keep the database running smoothly for researchers worldwide.",
+      "interests": ["Systems Architecture", "DevOps", "Infrastructure Management", "Cloud Computing"],
+      "category": "veupathdb"
+    }
+  ],
+  "alumni": {
+    "postdocs": [
+      {"name": "Bob Belnap", "years": "2018-2022", "currentPosition": "Industry Position"},
+      {"name": "Jeremy DeBarry", "years": "2016-2023", "currentPosition": "Foundation for NIH"},
+      {"name": "Mohammad Obaidat", "years": "2022-2023", "currentPosition": "Jordan University of Science and Technology"}
+    ],
+    "phdStudents": [
+      {"name": "Alejandro Acosta", "years": "2015-2020", "currentPosition": "Postdoc"},
+      {"name": "Catalina Alvarez", "years": "2016-2024", "currentPosition": "Postdoctoral Researcher"},
+      {"name": "Rodrigo Baptista", "years": "2014-2019", "currentPosition": "Research Scientist"}
+    ],
+    "mastersStudents": [
+      {"name": "Yiran Li", "years": "2019-2021"},
+      {"name": "Brynn Claypoole", "years": "2017-2019"}
+    ],
+    "staff": [
+      {"name": "Betsy Wang", "years": "2010-2020"},
+      {"name": "Bobby Burres", "years": "2012-2018"},
+      {"name": "Chris Ross", "years": "2014-2019"}
+    ],
+    "visitingScholars": [
+      {"name": "Abhijeet Kulkarni", "years": "2018", "institution": "India"},
+      {"name": "Akshay Kumar", "years": "2017-2018", "institution": "India"},
+      {"name": "Ali Alhamdan", "years": "2016-2017", "institution": "Saudi Arabia"}
+    ],
+    "undergrads": [
+      {"name": "Allyson Thomas", "years": "2019-2020"},
+      {"name": "Ariel Smith", "years": "2018-2019"},
+      {"name": "Brent Allman", "years": "2017-2018"}
+    ]
+  },
+  "metadata": {
+    "lastUpdated": "2025-02-03",
+    "totalCurrent": 10,
+    "totalAlumni": 18
+  }
+}

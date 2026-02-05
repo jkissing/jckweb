@@ -1,0 +1,515 @@
+{
+  "groups": [
+    {
+      "title": "Former post-doctoral associates / research scientists",
+      "members": [
+        {
+          "name": "Rodrigo de Paula Baptista",
+          "link": "https://www.linkedin.com/in/rodrigo-baptista-baa2bb92/",
+          "image": "images/BaptistaRodrigo_LI-300x300_1.jpg"
+        },
+        {
+          "name": "Abhijeet Bakre",
+          "link": "https://www.linkedin.com/in/abhijeetbakre/",
+          "image": "images/Abhijeet.jpg"
+        },
+        {
+          "name": "Megan Beaudry",
+          "link": "https://www.linkedin.com/in/megan-beaudry-phd/",
+          "image": "images/Megan Beaudry.jpg"
+        },
+        {
+          "name": "Jingling Huang",
+          "image": "images/Huang.jpg"
+        },
+        {
+          "name": "Sandeep Jose Joseph",
+          "link": "https://www.linkedin.com/in/sandeep-j-joseph-phd-mph-806886b2/",
+          "image": "images/Sandeep_Jose_Joseph.jpg"
+        },
+        {
+          "name": "Adriana Dr Andrade Oliveira",
+          "image": "images/oliveira.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Former PhD students",
+      "members": [
+        {
+          "name": "Shelton Griffith",
+          "image": "images/Shelton_Griffith.jpg"
+        },
+        {
+          "name": "Yiran Li",
+          "link": "https://www.linkedin.com/in/yiran-li-92090014b/",
+          "image": "images/Yiran-Li-570x570.jpg"
+        },
+        {
+          "name": "Ousman Mahmud",
+          "link": "https://www.linkedin.com/in/omahmud/",
+          "image": "images/Ousman Mahmud_0.jpg"
+        },
+        {
+          "name": "Nandita Mullapudi",
+          "link": "https://www.linkedin.com/in/mnandita/?originalSubdomain=hk",
+          "image": "images/nanditanew2.jpg"
+        },
+        {
+          "name": "Ranjani Namasivayam",
+          "link": "https://www.linkedin.com/in/sivaranjani-namasivayam-79180115/",
+          "image": "images/Ranjani.jpg"
+        },
+        {
+          "name": "Jenna Oberstaller",
+          "image": "images/Jenna-Oberstaller-2-1024x783.jpg"
+        },
+        {
+          "name": "Maryam Panahiazar",
+          "link": "https://www.linkedin.com/in/maryam-panahiazar-phd-msc-7b07b029/",
+          "image": "images/Maryam_Panahiazar.jpg"
+        },
+        {
+          "name": "Rui \"Ray\" Xiao",
+          "link": "https://www.linkedin.com/in/rui-x-a1a0b41a2/",
+          "image": "images/Rui Xiao.jpg"
+        },
+        {
+          "name": "Wenyuan Xiao",
+          "image": "images/Wenyuan_Xiao.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Former administrative support staff",
+      "members": [
+        {
+          "name": "Rachel Ankirskiy"
+        },
+        {
+          "name": "Kathy Jones",
+          "image": "images/kathy.jpg"
+        },
+        {
+          "name": "Betsy Wenthe"
+        },
+        {
+          "name": "Janie Wolf",
+          "image": "images/Janie_Wolf.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Former technicians and technical staff",
+      "members": [
+        {
+          "name": "Gwen Hirsch",
+          "role": "Research Technician",
+          "image": "images/Gwen_Hirsch.jpg"
+        },
+        {
+          "name": "Michael Luchtan",
+          "role": "Programmer"
+        },
+        {
+          "name": "Libby Mathis",
+          "role": "Laboratory Technician",
+          "image": "images/Libby_Mathis.jpg"
+        },
+        {
+          "name": "Cary Pennington",
+          "role": "Scientific Computing Professional Specialist",
+          "image": "images/CarryPennington.jpg"
+        },
+        {
+          "name": "Ed Robinson",
+          "role": "Program Specialist",
+          "image": "images/ed.jpg"
+        },
+        {
+          "name": "Marla Scott",
+          "role": "Laboratory Technician"
+        },
+        {
+          "name": "Ganesh Srinivasamoorthy",
+          "role": "Scientific Computing Specialist",
+          "image": "images/Ganesh_Srinivasamoorthy.jpg"
+        },
+        {
+          "name": "Michele Sturgeon",
+          "role": "Laboratory Technician"
+        },
+        {
+          "name": "Ryan Thibodeau",
+          "role": "Program Specialist",
+          "image": "images/Ryan_Thibodeau.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Former EuPathDB/VEuPathDB staff",
+      "members": [
+        {
+          "name": "Eveline Basenko",
+          "role": "EuPathDB scientific computing professional principal",
+          "image": "images/Evelina_Basenko.jpg"
+        },
+        {
+          "name": "Bob Belnap",
+          "role": "VEuPathDB systems team",
+          "image": "images/Bob_Belnap_0.jpg"
+        },
+        {
+          "name": "Jeremy DeBarry",
+          "role": "VEuPathDB project coordinator",
+          "image": "images/DeBarry_new photo.jpg"
+        },
+        {
+          "name": "Dave Falke",
+          "role": "VEuPathDB UI team",
+          "image": "images/Dave_Falke.jpg"
+        },
+        {
+          "name": "Alan Gingle",
+          "role": "EuPathDB database administrator",
+          "image": "images/gingle-alan.jpg"
+        },
+        {
+          "name": "Mark Heiges",
+          "role": "EuPathDB project manager",
+          "image": "images/Mark_Heiges.jpg"
+        },
+        {
+          "name": "Jay Humphrey",
+          "role": "VEuPathDB data loading team",
+          "image": "images/Jay_Humphrey.jpg"
+        },
+        {
+          "name": "Kris Lamareux",
+          "role": "VEuPathDB systems team",
+          "image": "images/Kris Lamoureux_thumbnail_0.png"
+        },
+        {
+          "name": "Brian Pitts",
+          "role": "EuPathDB systems administrator",
+          "image": "images/Brian_pitts.jpg"
+        },
+        {
+          "name": "Chris Ross",
+          "role": "EuPathDB program specialist",
+          "image": "images/Chris_Ross2.jpg"
+        },
+        {
+          "name": "Haiming Wang",
+          "role": "VEuPathDB data loading team",
+          "image": "images/Haiming_Wang.jpg"
+        },
+        {
+          "name": "Susanne Warrenfeltz",
+          "role": "VEuPathDB outreach team",
+          "image": "images/Susanne Warrenfeltz -Instructor.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Former DARPA project staff",
+      "members": [
+        {
+          "name": "Megan DeBarry",
+          "role": "MaHPIC data loader",
+          "image": "images/Megan_DeBarry.jpg"
+        },
+        {
+          "name": "Nicolas Lackman",
+          "role": "HAMMER & MaHPIC data validator",
+          "image": "images/Nicolas_Lackman.jpg"
+        },
+        {
+          "name": "Vishal Nayak",
+          "role": "MaHPIC senior data developer and bioinformatics programmer/analyst",
+          "image": "images/vishal.jpg"
+        },
+        {
+          "name": "Suman Pakale",
+          "role": "MaHPIC scientific computing professional specialist",
+          "image": "images/Suman_Pakala.jpg"
+        },
+        {
+          "name": "Ujwal Bagal",
+          "role": "ThIRM bioinformatics and data science researcher"
+        }
+      ]
+    },
+    {
+      "title": "Former graduate research assistants",
+      "members": [
+        {
+          "name": "Amit Agrawal",
+          "image": "images/amit.jpg"
+        },
+        {
+          "name": "Minal Agrawal"
+        },
+        {
+          "name": "Shubham Basu",
+          "image": "images/Shubham.png"
+        },
+        {
+          "name": "Doug Brewer",
+          "image": "images/Doug_Brewer.jpg"
+        },
+        {
+          "name": "Joshua Bridgers",
+          "image": "images/Joshua_Bridgers.jpg"
+        },
+        {
+          "name": "Akshay Coche",
+          "image": "images/akshay.jpg"
+        },
+        {
+          "name": "Jianliang Dai"
+        },
+        {
+          "name": "Alok Dhamanaskar",
+          "image": "images/Alok_Dhamanaskar.jpg"
+        },
+        {
+          "name": "Shanshan Ding",
+          "image": "images/ding_shanshan.jpg"
+        },
+        {
+          "name": "Jerric Gao",
+          "image": "images/jerric.jpg"
+        },
+        {
+          "name": "Cong-Zhou He",
+          "image": "images/congzhou.jpg"
+        },
+        {
+          "name": "Nivedita Kaluskar",
+          "image": "images/nivedita.jpg"
+        },
+        {
+          "name": "Chih-Horng Kuo",
+          "image": "images/chkuo.jpg"
+        },
+        {
+          "name": "Pablo Mendes",
+          "image": "images/pablomendes.jpg"
+        },
+        {
+          "name": "Phillipa Rhodes",
+          "image": "images/philippa.jpg"
+        },
+        {
+          "name": "Kelly Storm",
+          "image": "images/kelly.jpg"
+        },
+        {
+          "name": "Yanqi Su",
+          "image": "images/yanqi.jpg"
+        },
+        {
+          "name": "Sam Wang",
+          "image": "images/samwzm.jpg"
+        },
+        {
+          "name": "Chetna Warade"
+        },
+        {
+          "name": "Yunzhou Wu",
+          "image": "images/yunzhou.jpg"
+        },
+        {
+          "name": "Wenlong Zheng",
+          "image": "images/wenlong.jpg"
+        },
+        {
+          "name": "Jianping Zhu"
+        }
+      ]
+    },
+    {
+      "title": "Former undergraduate researchers",
+      "members": [
+        {
+          "name": "Allyson Byrd",
+          "image": "images/allyson.jpg"
+        },
+        {
+          "name": "Ariel Campbell",
+          "image": "images/ariel.jpg"
+        },
+        {
+          "name": "Claire Daniel"
+        },
+        {
+          "name": "Brynn Claypoole",
+          "image": "images/Brynn Claypoole.jpg"
+        },
+        {
+          "name": "Holly Coffey"
+        },
+        {
+          "name": "Garrett Cooper",
+          "image": "images/Garrett_profile pic.jpg"
+        },
+        {
+          "name": "Madeline Cozad",
+          "image": "images/madeline.jpg"
+        },
+        {
+          "name": "Ladson Gaddy"
+        },
+        {
+          "name": "Jonathan Gardner",
+          "image": "images/jonathan.jpg"
+        },
+        {
+          "name": "Erica Hall",
+          "image": "images/EricaHall.jpg"
+        },
+        {
+          "name": "Fallon Hampton"
+        },
+        {
+          "name": "Katharine Korunes",
+          "image": "images/Katharine_Korunes.jpg"
+        },
+        {
+          "name": "Lela Laseter",
+          "image": "images/Lela.jpg"
+        },
+        {
+          "name": "Dongwoo Lee"
+        },
+        {
+          "name": "Noah Legall",
+          "image": "images/noah_legall_0.jpg"
+        },
+        {
+          "name": "Rachel Lippincott",
+          "image": "images/Lippincott.jpg"
+        },
+        {
+          "name": "Mopelola Oluwadare",
+          "image": "images/oluwadare_icon.jpg"
+        },
+        {
+          "name": "Jatan Patel",
+          "image": "images/Jatan_Patel.jpg"
+        },
+        {
+          "name": "Deepa Raju"
+        },
+        {
+          "name": "Julia Scott",
+          "image": "images/Julia Scott_0.jpg"
+        },
+        {
+          "name": "Shaneka Smalls",
+          "image": "images/Shaneka_Smalls.jpg"
+        },
+        {
+          "name": "Agnel Smith"
+        },
+        {
+          "name": "Ethan Smith"
+        },
+        {
+          "name": "Jonathan Trebble-Greening",
+          "image": "images/Jonathan_Trebble-Greening.jpg"
+        },
+        {
+          "name": "Isaac John Van Duys",
+          "image": "images/Isaac.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Former visiting scholars",
+      "members": [
+        {
+          "name": "John Alejandro Acosta Davila",
+          "image": "images/alejandro_acosta_0.jpg"
+        },
+        {
+          "name": "Fernan Aguero",
+          "image": "images/fernan_0.jpg"
+        },
+        {
+          "name": "Eric Aguiar",
+          "role": "Centro de Pesquisas Rene Rachou - FIOCRUZ, Brazil",
+          "image": "images/Eric_Aguia.jpg"
+        },
+        {
+          "name": "Mohammed Sohaib Ali",
+          "image": "images/ali.jpg"
+        },
+        {
+          "name": "Juliana Assis",
+          "image": "images/Juliana_Assis.jpg"
+        },
+        {
+          "name": "Segun Fatumo",
+          "role": "Covenant University in Nigeria",
+          "image": "images/Segun_Fatumo_0.jpg"
+        },
+        {
+          "name": "Turgay Ibrikci",
+          "role": "Turkey",
+          "image": "images/Turgay_Ibrikci.jpg"
+        },
+        {
+          "name": "Osagie Idehen",
+          "role": "Tuskegee University"
+        },
+        {
+          "name": "Li Jiayu",
+          "role": "South China Agricultural University",
+          "image": "images/Jiayu Portrait_1.png"
+        },
+        {
+          "name": "Catalina Meneses",
+          "image": "images/Catalina Alvarez Meneses.jpg"
+        },
+        {
+          "name": "Raymond Nyasa",
+          "image": "images/Raymond_Nyasa3_0.jpg"
+        },
+        {
+          "name": "Irfan Ozen",
+          "role": "Erciyes University in Turkey"
+        },
+        {
+          "name": "Hannah Stealey"
+        },
+        {
+          "name": "Huayong (Tim) Xu",
+          "role": "SCBIT, Shanghai China",
+          "image": "images/tim_xu.jpg"
+        },
+        {
+          "name": "Fudong Yu",
+          "role": "SCBIT, Shanghai China",
+          "image": "images/fudong_yu.jpg"
+        },
+        {
+          "name": "Adhemar Zerlotini",
+          "role": "Centro de Pesquisas Rena Rachou - FIOCRUZ, Brazil",
+          "image": "images/AdhemarZerlotini.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Other former lab members",
+      "members": [
+        {
+          "name": "Brent Allman",
+          "role": "Post-baccalaureate PREP scholar (co-advised by Drs. Juan Gutierrez and Jessie Kissinger)",
+          "image": "images/brent_allman.jpg"
+        }
+      ]
+    }
+  ]
+}

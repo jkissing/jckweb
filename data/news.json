@@ -1,0 +1,29 @@
+{
+  "news": [
+    {
+      "title": "Best Wishes to Jeremy",
+      "date": "2023-03-08",
+      "summary": "We wish Jeremy all the best in his new job at the Foundation for NIH."
+    },
+    {
+      "title": "Farewell, Bob!",
+      "date": "2022-09-30",
+      "summary": "Bob is leaving the lab to start a position in industry."
+    },
+    {
+      "title": "Jessie was interviewed on an episode of The Genetics Podcast",
+      "date": "2022-09-29",
+      "summary": "Jessie discussed large-scale parasite genomics and multi-omic data."
+    },
+    {
+      "title": "New Publication in Nucleic Acids Research",
+      "date": "2022-06-01",
+      "summary": "A resource paper describing VEuPathDB updates and improvements."
+    },
+    {
+      "title": "Welcome New Lab Members",
+      "date": "2022-05-01",
+      "summary": "We welcome new members to the Kissinger Research Group."
+    }
+  ]
+}
