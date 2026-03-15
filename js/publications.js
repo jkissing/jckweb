@@ -38,10 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const publicationsContainer = document.getElementById('publications-container');
     if (!publicationsContainer) return;
 
-    let currentPage = 1;
-    const publicationsPerPage = 10;
     let allPublications = [];
-    let selectedYear = 'all';
 
     // Flatten publications by year
     function flattenPublications() {
@@ -51,38 +48,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 allPublications.push(pub);
             });
         });
-    }
-
-    // Filter publications by year
-    function filterByYear(year) {
-        selectedYear = year;
-        currentPage = 1;
-        if (year === 'all') {
-            return allPublications;
-        }
-        return allPublications.filter(pub => pub.year === year);
-    }
-
-    // Get paginated publications
-    function getPaginatedPublications(pubs) {
-        const start = (currentPage - 1) * publicationsPerPage;
-        const end = start + publicationsPerPage;
-        return pubs.slice(start, end);
+        // Limit to latest 12 publications
+        allPublications = allPublications.slice(0, 12);
     }
 
     // Render publications
     function renderPublications() {
-        const filteredPubs = filterByYear(selectedYear);
-        const paginatedPubs = getPaginatedPublications(filteredPubs);
-
         publicationsContainer.innerHTML = '';
 
-        if (paginatedPubs.length === 0) {
+        if (allPublications.length === 0) {
             publicationsContainer.innerHTML = '<p class="no-publications">No publications found.</p>';
             return;
         }
 
-        paginatedPubs.forEach((pub, index) => {
+        allPublications.forEach((pub, index) => {
             const pubElement = document.createElement('article');
             pubElement.className = 'publication-item fade-in';
             pubElement.style.animationDelay = `${index * 0.1}s`;
@@ -98,106 +77,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             publicationsContainer.appendChild(pubElement);
         });
-
-        renderPagination(filteredPubs.length);
-    }
-
-    // Render pagination
-    function renderPagination(totalPubs) {
-        const totalPages = Math.ceil(totalPubs / publicationsPerPage);
-        const paginationContainer = document.getElementById('pagination');
-
-        if (!paginationContainer || totalPages <= 1) {
-            if (paginationContainer) paginationContainer.innerHTML = '';
-            return;
-        }
-
-        let paginationHTML = '<div class="pagination-controls">';
-
-        // Previous button
-        if (currentPage > 1) {
-            paginationHTML += `<button class="page-btn" data-page="${currentPage - 1}">← Previous</button>`;
-        }
-
-        // Page numbers
-        const maxButtons = 7;
-        let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
-        let endPage = Math.min(totalPages, startPage + maxButtons - 1);
-
-        if (endPage - startPage < maxButtons - 1) {
-            startPage = Math.max(1, endPage - maxButtons + 1);
-        }
-
-        if (startPage > 1) {
-            paginationHTML += `<button class="page-btn" data-page="1">1</button>`;
-            if (startPage > 2) {
-                paginationHTML += `<span class="pagination-ellipsis">...</span>`;
-            }
-        }
-
-        for (let i = startPage; i <= endPage; i++) {
-            const activeClass = i === currentPage ? 'active' : '';
-            paginationHTML += `<button class="page-btn ${activeClass}" data-page="${i}">${i}</button>`;
-        }
-
-        if (endPage < totalPages) {
-            if (endPage < totalPages - 1) {
-                paginationHTML += `<span class="pagination-ellipsis">...</span>`;
-            }
-            paginationHTML += `<button class="page-btn" data-page="${totalPages}">${totalPages}</button>`;
-        }
-
-        // Next button
-        if (currentPage < totalPages) {
-            paginationHTML += `<button class="page-btn" data-page="${currentPage + 1}">Next →</button>`;
-        }
-
-        paginationHTML += '</div>';
-        paginationContainer.innerHTML = paginationHTML;
-
-        // Add event listeners
-        document.querySelectorAll('.page-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                currentPage = parseInt(this.getAttribute('data-page'));
-                renderPublications();
-                window.scrollTo({ top: 300, behavior: 'smooth' });
-            });
-        });
-    }
-
-    // Render year filter
-    function renderYearFilter() {
-        const yearFilterContainer = document.getElementById('year-filter');
-        if (!yearFilterContainer) return;
-
-        const years = Object.keys(publicationsData).sort((a, b) => b - a);
-
-        let filterHTML = '<div class="year-filter-buttons">';
-        filterHTML += `<button class="year-btn active" data-year="all">All Years</button>`;
-
-        years.forEach(year => {
-            filterHTML += `<button class="year-btn" data-year="${year}">${year}</button>`;
-        });
-
-        filterHTML += '</div>';
-        yearFilterContainer.innerHTML = filterHTML;
-
-        // Add event listeners
-        document.querySelectorAll('.year-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                document.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-
-                selectedYear = this.getAttribute('data-year');
-                currentPage = 1;
-                renderPublications();
-            });
-        });
     }
 
     // Initialize
     flattenPublications();
-    renderYearFilter();
     renderPublications();
 });
 
